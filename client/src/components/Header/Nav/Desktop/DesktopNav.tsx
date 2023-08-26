@@ -11,7 +11,7 @@ type Props = {}
 const DesktopNav = (props: Props) => {
   const style = {
     link: {
-      container: `flex items-center hover:text-orange ${styles.onClickAnimation}`,
+      container: `flex items-center hover:text-orange active:scale-95 ${styles.longTransition}`,
       icon: `mr-[8px]`,
     },
   }
