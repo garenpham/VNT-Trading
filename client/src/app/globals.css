@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --root-margin: 1.4rem;
+  
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #75817c;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #e6e1e1;
+    opacity: 0.5;
+  }
+
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 1024px) {
+  :root {
+    --root-margin: 20rem;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
