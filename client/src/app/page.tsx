@@ -1,5 +1,6 @@
-import Image from 'next/image'
+import HomePage from '@/components/Home/HomePage'
+import React from 'react'
 
 export default function Home() {
-  return <div>Hello</div>
+  return <HomePage />
 }

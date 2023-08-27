@@ -17,7 +17,7 @@ const DesktopNav = (props: Props) => {
   }
   return (
     <div className='flex font-[700] text-[1.2rem] gap-[40px]'>
-      <Link href='#' className={style.link.container}>
+      <Link href='/' className={style.link.container}>
         <GoHomeFill className={style.link.icon} />
         Home
       </Link>

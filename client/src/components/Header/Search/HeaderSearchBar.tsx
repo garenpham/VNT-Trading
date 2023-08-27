@@ -1,6 +1,6 @@
 import { styles } from '@/constants/styles'
 import React from 'react'
-import { BiSearchAlt } from 'react-icons/bi'
+import { IoSearch } from 'react-icons/io5'
 
 const style = {
   wrapper: `w-full lg:w-auto h-[2rem] lg:h-[3rem] m-auto text-[0.6rem] lg:text-sm flex active:scale-[.99] ${styles.longTransition} group`,
@@ -18,7 +18,7 @@ const HeaderSearchBar = () => {
         className={style.inputField}
       />
       <div className={style.searchContainer}>
-        <BiSearchAlt className='text-[24px] lg:text-2xl' />
+        <IoSearch className='text-[24px] lg:text-2xl' />
       </div>
     </div>
   )
