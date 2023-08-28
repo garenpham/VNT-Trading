@@ -1,5 +1,4 @@
 import { Button } from '@/components/shared/Buttons/Button'
-import { styles } from '@/constants/styles'
 import Image from 'next/image'
 import React from 'react'
 
@@ -29,13 +28,13 @@ const HomeBanner = (props: Props) => {
           className={`w-[520px] flex items-center justify-center gap-[34px] mt-[64px]`}>
           <Button
             size={'none'}
-            className={`w-[200px] h-[51px] uppercase font-[800] ${styles.button.primary.hover.dark}`}>
+            className={`w-[200px] h-[51px] uppercase font-[800] hover:border-orange hover:text-orange hover:bg-white`}>
             buy online
           </Button>
           <Button
             size={'none'}
             variant={'alternate'}
-            className={`w-[200px] h-[51px] uppercase font-[800] ${styles.button.alternate.hover.dark}`}>
+            className={`w-[200px] h-[51px] uppercase font-[800] hover:text-white hover:border-white`}>
             contact us
           </Button>
         </div>
