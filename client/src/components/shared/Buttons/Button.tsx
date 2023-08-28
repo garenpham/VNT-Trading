@@ -4,22 +4,27 @@ import * as React from 'react'
 import { ImSpinner8 } from 'react-icons/im'
 
 const buttonVariants = cva(
-  'shrink-0 rounded-[8px] active:scale-100 hover:scale-105 inline-flex items-center justify-center disabled:pointer-events-none disabled:text-gray_3 disabled:border-gray_2 disabled:bg-white disabled:border transform transition duration-100 ease-in', //these are the base styles
+  'border shrink-0 rounded-[8px] inline-flex items-center justify-center disabled:pointer-events-none disabled:text-gray_3 disabled:border-gray_2 disabled:bg-white disabled:border transform transition duration-100 ease-in', //these are the base styles
   {
     variants: {
       variant: {
-        primary: 'bg-orange text-white',
-        alternate: 'text-orange border border-orange',
+        primary: 'bg-orange text-white border-transparent',
+        alternate: 'text-orange border-orange border-orange',
       },
       size: {
         lg: 'h-[56px] w-[358px] lg:w-[485px]',
         sm: 'h-[56px] w-[358px] lg:w-[485px]',
         none: '',
       },
+      animation: {
+        default: `hover:scale-105 active:scale-100`,
+        none: ``,
+      },
     },
     defaultVariants: {
       variant: 'primary',
       size: 'lg',
+      animation: 'default',
     },
   }
 )

@@ -28,7 +28,7 @@ const HomeBanner = (props: Props) => {
           className={`w-[520px] flex items-center justify-center gap-[34px] mt-[64px]`}>
           <Button
             size={'none'}
-            className={`w-[200px] h-[51px] uppercase font-[800] hover:border-orange hover:text-orange hover:bg-white`}>
+            className={`w-[200px] h-[51px] uppercase font-[800] hover:border-white hover:text-orange hover:bg-white`}>
             buy online
           </Button>
           <Button

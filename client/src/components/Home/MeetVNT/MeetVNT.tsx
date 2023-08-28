@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from '@/components/shared/Buttons/Button'
 import { lobster } from '@/constants/fonts'
 import { styles } from '@/constants/styles'
 import Image from 'next/image'
@@ -14,6 +15,7 @@ const MeetVNT = (props: Props) => {
   const style = {
     notSelected: `font-bold text-orange border border-orange rounded px-[1rem] py-[.2rem] cursor-pointer hover:bg-orange hover:text-white active:scale-95 ${styles.longTransition}`,
     selected: `font-bold text-white bg-orange border border-transparent rounded px-[1rem] py-[.2rem] cursor-pointer active:scale-95 ${styles.longTransition}`,
+    button: `font-bold uppercase py-[.6rem] px-[1.4rem] hover:bg-white hover:text-orange hover:border-orange hover:scale-100 active:scale-95`,
   }
   return (
     <section className='px-[--root-margin] flex items-center py-[80px] gap-[4rem]'>
@@ -65,7 +67,15 @@ const MeetVNT = (props: Props) => {
           <Content id={currentIdx} />
         </div>
 
-        <div>Button</div>
+        <div className='flex gap-[1rem] items-center'>
+          <Button size={'none'} animation={'none'} className={style.button}>
+            Purchase Now!
+          </Button>
+
+          <Button size={'none'} animation={'none'} className={style.button}>
+            Contact Us
+          </Button>
+        </div>
       </div>
     </section>
   )
